@@ -1,0 +1,17 @@
+.link-animation {
+  outline: none;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+
+  &:focus {
+    color: $title;
+  }
+
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: #232323;
+  }
+}

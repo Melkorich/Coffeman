@@ -1,0 +1,18 @@
+.btn-animation {
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:focus {
+    background-color: $title;
+  }
+
+  &:hover {
+    background-color: $hover;
+    border-color: $hover;
+  }
+
+  &:active {
+    background-color: #232323;
+  }
+
+}
