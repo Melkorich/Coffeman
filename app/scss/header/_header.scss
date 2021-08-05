@@ -36,10 +36,9 @@
       content: '';
       position: absolute;
       top: 0;
-      right: 15%;
-      max-width: 460px;
+      right: 5%;
+      width: 550px;
       height: 460px;
-      width: 100%;
       background-image: url('../images/header/header-bg1.png');
       background-repeat: no-repeat;
       background-size: contain;
@@ -133,20 +132,4 @@
       margin:0 25px 0 0;
     }
   }
-
-}
-
-
-
-
-main {
-  background-color: rgb(88, 76, 76);
-  p {
-    margin-bottom: 20px;
-  }
-}
-
-.footer {
-  background-color: rgb(168, 138, 138);
-  padding: 10px 20px;
 }
