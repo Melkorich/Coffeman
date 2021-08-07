@@ -1,5 +1,5 @@
 .bestsellers {
-  padding: 50px 0;
+  padding: 50px 0 90px;
 
   &__top {
     display: flex; 
@@ -33,10 +33,12 @@
     font-style: normal;
     font-size: 35px;
     margin: 0 0 25px 0;
+    @include line-climp(2);
   }
 
   &__descr {
     padding-left: 45px;
+    @include line-climp(4);
   }
 
   &__content {
@@ -48,10 +50,12 @@
   &__title {
     text-align: left;
     margin-bottom: 25px;
+    @include line-climp(2);
   }
   
   &__text {
     margin: 0 0 70px 0;
+    @include line-climp(4);
   }
 
   &__inner {
@@ -62,6 +66,8 @@
 
   &__box {
     margin-right: 20px;
+    max-width: 300px;
+    height: 400px;
   }
 
   &__link {
@@ -103,7 +109,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: all .5s;
+    transition: all .3s;
 
     &::before {
       content: '';
@@ -114,6 +120,7 @@
       left: 0;
       background-color:rgba(35, 35, 35, 0.8);
       display: none;
+      transition: 0.5s;
     }
 
     &:hover {
@@ -132,13 +139,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
     min-width: 0px;
+    @include line-climp(1);
+    display: none;
   }
 }
 
 .slider .slick-center .slider__link {
   transform: scale(1.15);
+}
+
+.slider .slick-center .slider__text{
+  display: block;
 }
 
 .slick-arrow {
@@ -148,12 +160,15 @@
   background-color: transparent;
   border: transparent;
   width: 56px;
+  z-index: 10;
 
   &:hover {
-    svg {
-      path {
-        fill: $title;
-      }
+    opacity: 0.5;
+  }
+
+  &:hover svg {
+    path {
+      fill: $title;
     }
   }
 }
@@ -162,9 +177,5 @@
   left: 44%;
 }
 
-.slick-current {
-  .slider__text {
-    display: block;
-  }
-}
+
  

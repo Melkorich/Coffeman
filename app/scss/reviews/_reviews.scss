@@ -1,0 +1,123 @@
+.reviews {
+  padding: 65px 0 68px;
+  background-color: #1C1C1C;
+}
+
+.reviews-slider {
+  position: relative;
+  margin: 0 auto;
+  width: 868px;
+  height: 400px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -75px;
+    width: 100px;
+    height: 70px;
+    background-image: url('../images/reviews/quotes.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
+  }
+ 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 318px;
+    background-image: url('../images/reviews/line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
+  }
+
+  &__inner {
+    max-width: 724px;
+    padding: 45px 60px;
+    background-color: $text23;
+    position: relative;
+  }
+
+  &__text {
+    max-width: 525px;
+  }
+
+  &__image {
+    width: 158px;
+    height: 158px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: -78px;
+    transform: translateY(-50%);
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin: 0 0 7px 0;
+    }
+  }
+} 
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: -15px;
+  left: 40%;
+  transform: translateX(-45%);
+}
+
+.slick-dots li {
+  padding: 0 8px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.slick-dots button {
+  background-color: #9C9C9C;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  outline: transparent;
+  border: 1px solid transparent;
+
+  &:focus {
+    background-color: $title;
+  }
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    background-color: #232323;
+  }
+}
+
+.slick-active button{
+  background-color: $title;
+}
+
+
+
+.rate {
+ margin: 0 0 15px 0;
+}
+
+.jq-ry-container {
+  position: relative;
+  padding: 0; 
+  line-height: 0; 
+  display: block;
+  cursor: pointer; 
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  direction: ltr;
+}
