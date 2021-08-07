@@ -1,5 +1,28 @@
 .bestsellers {
-  padding: 50px 0 90px;
+  padding: 50px 0 140px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: 50px;
+    left: 0;
+    width: 600px;
+    height: 460px;
+    background-image: url('../images/bestsellers/bg-2.png');
+    background-repeat: no-repeat;
+  }
+ 
+  &::after {
+    position: absolute;
+    content: '';
+    width: 430px;
+    height: 330px;
+    top: 140px;
+    right: 15%;
+    background-image: url('../images/bestsellers/bg-1.png');
+    background-repeat: no-repeat;
+  }
 
   &__top {
     display: flex; 
@@ -159,17 +182,10 @@
   left: 55%;
   background-color: transparent;
   border: transparent;
-  width: 56px;
-  z-index: 10;
+  width: 60px;
 
   &:hover {
     opacity: 0.5;
-  }
-
-  &:hover svg {
-    path {
-      fill: $title;
-    }
   }
 }
 
