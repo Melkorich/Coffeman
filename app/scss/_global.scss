@@ -7,6 +7,10 @@ body {
   line-height: 1.3;
   color: $text;
   background-color: #232323;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -34,4 +38,9 @@ body {
   line-height: 1.1;
   text-align: center;
   color: $title;
+
+  @include maxw($md) {
+    font-size: 35px;
+  }
+  
 }
