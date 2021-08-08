@@ -1,0 +1,94 @@
+.catalog {
+  padding: 90px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 550px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 368px;
+  height: 330px;
+  margin: 20px 10px;
+  padding: 35px 15px;
+  background-color: #1C1C1C;
+  display: flex;
+  flex-direction: column;
+  box-shadow: transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 5px 40px rgba(#E5E5E5, 0.2);
+    height: 500px;
+  }
+
+  &__image {
+    position: relative;
+    width: 300px;
+    height: 315px;
+    top: -60px;
+    left: 20px;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(228, 228, 228, 0.2);
+  }
+
+  &__img {
+    max-width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+ 
+  &__content {
+    position: relative;
+    margin: -140px 0 0 0;
+    padding: 0 40px 15px 40px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover .card__content {
+    visibility: visible;
+    opacity: 1;
+    margin: -40px 0 0 0;
+    transition-delay: 0.2s;
+  }
+
+  &__inner {
+    max-width: 265px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    overflow: hidden; 
+    @include line-climp(1);
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    @include line-climp(3);
+  }
+ 
+  &__price {
+    display: inline-block;
+    font-size: 19px;
+    color: #9c9c9c;
+    @include line-climp(1);
+    max-width: 150px;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+  }
+} 

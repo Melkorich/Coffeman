@@ -38,6 +38,7 @@
 
   &__inner {
     max-width: 724px;
+    width: 100%;
     padding: 45px 60px;
     background-color: $text23;
     position: relative;
@@ -45,6 +46,30 @@
 
   &__text {
     max-width: 525px;
+    height: 250px;
+    overflow: auto;
+  }
+
+  .reviews-slider__text::-webkit-scrollbar {
+     display: none;
+  }
+
+  .reviews-slider__text:hover::-webkit-scrollbar {
+    display: block;
+  }
+  
+  .reviews-slider__text::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .reviews-slider__text::-webkit-scrollbar-track {
+    background: rgba(#d4d4d4, 0.6);
+  }
+
+  .reviews-slider__text::-webkit-scrollbar-thumb {
+    background: rgb(209, 162, 91);
+    border-radius: 10px;
+    border: 1px solid #ad916a;
   }
 
   &__image {
