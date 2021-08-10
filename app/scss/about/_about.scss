@@ -74,9 +74,13 @@
     justify-content: flex-end;
     position: relative;
 
-    @include maxw($md) {
+    @include maxw($xl) {
       padding: 80px 0 0 0;
-      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    @include maxw($xl) {
+      padding: 60px 0 0 0;
     }
 
     &::before {
@@ -90,7 +94,7 @@
       background-repeat: no-repeat;
     }
 
-    @include maxw($md) {
+    @include maxw($xl) {
       &::before {
         display: none;
       }
@@ -111,9 +115,13 @@
     text-transform: uppercase;
     margin: 0 0 25px 0;
   }
-
+ 
   &__descr {
-    padding-left: 120px;
+    padding: 0 0 0 120px;
+
+    @include maxw($xl) {
+      padding: 0 0 0 0px;
+    }
 
     @include maxw($md) {
       padding-left: 0;

@@ -20,7 +20,25 @@ $(function(){
     centerMode: true,
     centerPadding: '0px',
     focusOnSelect: true,
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2,
+        }
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
+  
 
   $(".rate").rateYo({
     starWidth: "30px",
