@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
   }
 }
-     
+      
 .logo {
   min-width: 85px;
   height: 70px;
@@ -35,7 +35,7 @@ body {
     object-fit: contain;
   }
 }
-
+  
 .title {
   font-family: 'Montserrat';
   font-weight: 600;
@@ -48,5 +48,4 @@ body {
   @include maxw($md) {
     font-size: 35px;
   }
-  
 }

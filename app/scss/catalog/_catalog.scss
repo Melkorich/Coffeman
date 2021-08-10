@@ -1,11 +1,20 @@
 .catalog {
   padding: 90px 0;
 
+  @include maxw($xl) {
+    padding: 50px 0;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 550px;
+
+    @include maxw($xl) {
+      justify-content: center;
+      height: auto;
+    }
   }
 
   &__title {
@@ -25,9 +34,22 @@
   box-shadow: transparent;
   transition: all 0.3s ease-in-out;
 
+  @include maxw($xl) {
+    margin: 30px 20px;
+  }
+
+  @include maxw($xs) {
+   width: 280px;
+   padding: 30px 10px;
+  }
+ 
   &:hover {
     box-shadow: 0 5px 40px rgba(#E5E5E5, 0.2);
     height: 500px;
+
+    @include maxw($xs) {
+      height: 480px;
+    }
   }
 
   &__image {
@@ -38,6 +60,12 @@
     left: 20px;
     z-index: 2;
     box-shadow: 0 3px 10px rgba(228, 228, 228, 0.2);
+
+    @include maxw($xs) {
+      width: 260px;
+      height: 276px;
+      left: 0;
+    }
   }
 
   &__img {

@@ -29,6 +29,7 @@
 
     @include maxw($xl) {
      justify-content: space-between;
+     margin: 0 0 40px 0;
     }
 
     @include maxw($md) {
@@ -43,8 +44,8 @@
     margin-right: 44px;
 
     @include maxw($xl) {
-      flex:1 0 50%;
-      height: 500px;
+      width: 50%;
+      height: 480px;
       margin-right: 20px;
     }
 
@@ -75,6 +76,7 @@
 
   &__description {
     margin: 0 0 165px 0;
+    padding: 0 5px;
 
     @include maxw($xl) {
       flex:1 0 50%;
@@ -98,13 +100,17 @@
     font-size: 35px;
     margin: 0 0 25px 0;
     @include line-climp(2);
+
+    @include maxw($xs) {
+      margin: 0 0 15px 0;
+    }
   }
 
   &__descr {
     padding-left: 45px;
     @include line-climp(4);
 
-    @include maxw($md) {
+    @include maxw($lg) {
      padding-left: 0;
     }
   }
@@ -119,11 +125,19 @@
     text-align: left;
     margin-bottom: 25px;
     @include line-climp(2);
+
+    @include maxw($xs) {
+      margin: 0 0 15px 0;
+    }
   }
   
   &__text {
     margin: 0 0 70px 0;
     @include line-climp(4);
+
+    @include maxw($xl) {
+      margin: 0 0 30px 0;
+    }
 
     @include maxw($xs) {
       font-size: 24px;
@@ -150,18 +164,14 @@
 
   &__wrapper {
     max-width: 1440px;
-    position: relative;
-    float: right;
-
-    @include maxw($xxl-extra) {
-      float: none;
-    }
-   
+    justify-content: flex-end;
+    display: flex;
   }
 }
 
 .slider {
   display: flex;
+  height: 450px;
   max-width: 1060px;
   padding: 0 0 35px 0;
   margin-top: -100px;
@@ -180,6 +190,10 @@
 
     @include maxw($xl) {
       padding: 0 15px;
+    }
+
+    @include maxw($md) {
+     padding: 0;
     }
   }
 
@@ -200,6 +214,10 @@
       height: 350px;
       margin: 10px;
     }
+
+    @include maxw($md) {
+      margin: 0;
+     }
 
     &::before {
       content: '';
@@ -232,11 +250,19 @@
     min-width: 0px;
     @include line-climp(1);
     display: none;
+
+    @include maxw($xl) {
+      display: block;
+    }
   }
 }
 
 .slider .slick-center .slider__link {
   transform: scale(1.15);
+
+  @include maxw($xl) {
+    transform: none;
+  }
 }
 
 .slider .slick-center .slider__text{
