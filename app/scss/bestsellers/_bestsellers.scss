@@ -187,6 +187,11 @@
     width: 100%;
   }
 
+  @include maxw($md) {
+    height: 400px;
+    padding: 0;
+  }
+
   &__item {
     padding: 0 30px;
 
@@ -257,6 +262,11 @@
       display: block;
     }
   }
+
+  .slick-dots {
+    left: 50%;
+    bottom: 5px;
+  }
 }
 
 .slider .slick-center .slider__link {
@@ -270,7 +280,7 @@
 .slider .slick-center .slider__text{
   display: block;
 }
-
+ 
 .slick-arrow {
   position: absolute;
   bottom: 0;
