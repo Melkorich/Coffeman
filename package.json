@@ -9,6 +9,7 @@
   "author": "Kirill Lavrov",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -18,7 +19,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
+    "rateyo": "^2.3.2",
     "slick-carousel": "^1.8.1",
-    "rateyo": "^2.3.2"
+    "wow.js": "^1.2.2"
   }
 }

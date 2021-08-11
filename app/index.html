@@ -24,16 +24,16 @@
             
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link link-animation" href="#">О нас</a>
+                <a class="menu__link link-animation wow animate__animated animate__fadeIn" href="#about">О нас</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link link-animation" href="#">Бестселлеры</a>
+                <a class="menu__link link-animation wow animate__animated animate__fadeIn" data-wow-delay=".2s" href="#bestsellers">Бестселлеры</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link link-animation" href="#">Каталог</a>
+                <a class="menu__link link-animation wow animate__animated animate__fadeIn" data-wow-delay=".4s" href="#catalog">Каталог</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link link-animation" href="#">Отзывы</a>
+                <a class="menu__link link-animation wow animate__animated animate__fadeIn" data-wow-delay=".6s" href="#reviews">Отзывы</a>
               </li>
             </ul>
           </nav>
@@ -41,21 +41,21 @@
   
         <div class="header__content">
         
-          <h1 class="header__title">
+          <h1 class="header__title wow animate__animated animate__fadeIn" data-wow-delay=".3s">
             Больше,
-            <span>чем просто </span>
-            <span>кофе</span>
+            <span class="wow animate__animated animate__fadeIn" data-wow-delay=".5s">чем просто </span>
+            <span class="wow animate__animated animate__fadeIn" data-wow-delay=".6s">кофе</span>
           </h1>
           
-          <div class="header__text">
+          <div class="header__text wow animate__animated animate__fadeIn" data-wow-delay=".8s">
             <p>
               Открой для себя мир изысканных сортов ароматного кофе вместе с Coffeeman 
             </p>
           </div>
         </div>
         <div class="header__links">
-          <a class="header__link btn-animation" href="#">Смотреть каталог</a>
-          <a class="header__link btn-animation" href="#">Подробнее</a>
+          <a class="header__link btn-animation wow animate__animated animate__fadeIn" data-wow-delay="1s" href="#">Смотреть каталог</a>
+          <a class="header__link btn-animation wow animate__animated animate__fadeIn" data-wow-delay="1.2s" href="#">Подробнее</a>
         </div>
 
       </div>
@@ -63,7 +63,7 @@
   </header> 
 
   <main class="main">
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title">Кофейни Coffeeman это:</h2>
 
@@ -112,8 +112,8 @@
 
         <div class="about__values">
           <div class="about__description">
-            <h3 class="about__subtitle">Главные ценности -</h3>
-            <div class="about__descr">
+            <h3 class="about__subtitle  wow animate__animated animate__fadeInUp" data-wow-delay=".5s" data-wow-offset="10">Главные ценности -</h3>
+            <div class="about__descr wow animate__animated animate__fadeInUp" data-wow-delay=".7s" data-wow-offset="10">
               <p>
                 Каждый день наша работа заключается в том, чтобы дарить людям радость, расти и развиваться. Мы - команда единомышленников, для которой важно делать мир лучше и жить свою жизнь через призму гостеприимства.
               </p>
@@ -124,15 +124,15 @@
       </div>
     </section>
 
-    <section class="bestsellers">
+    <section class="bestsellers" id="bestsellers">
       <div class="container">
         <div class="bestsellers__top">
-          <div class="bestsellers__image">
-            <img src="images/bestsellers/1.jpg" alt="картинка с кофе, иетефоном и книгой">
+          <div class="bestsellers__image wow animate__animated animate__fadeInUp">
+            <img src="images/bestsellers/1.jpg" alt="картинка с кофе, телефоном и книгой">
           </div>
           <div class="bestsellers__description">
-            <h3 class="bestsellers__subtitle">Coffeeman -</h3>
-            <div class="bestsellers__descr">
+            <h3 class="bestsellers__subtitle wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-offset="10">Coffeeman -</h3>
+            <div class="bestsellers__descr wow animate__animated animate__fadeInUp" data-wow-delay=".3s" data-wow-offset="10">
               <p>
                 Это заряд энергии и радости. Это – душа и сердце, искусство и мастерство.
               </p>
@@ -140,8 +140,8 @@
           </div>
         </div>
         <div class="bestsellers__content">
-          <h2 class="bestsellers__title title">Наши бестселлеры</h2>
-          <div class="bestsellers__text">
+          <h2 class="bestsellers__title title wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-offset="10"">Наши бестселлеры</h2>
+          <div class="bestsellers__text wow animate__animated animate__fadeInUp" data-wow-delay=".3s" data-wow-offset="10"">
             <p>
               Попробуйте самые популярные и любимые напитки наших гостей! 
             </p>
@@ -197,7 +197,7 @@
 
     </section>
 
-    <div class="reviews">
+    <div class="reviews" id="reviews">
       <div class="container">
         <div class="reviews__slider reviews-slider">
   
@@ -263,12 +263,12 @@
       </div>
     </div>
  
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container">
-        <h2 class="catalog title">Каталог товаров</h2>
+        <h2 class="catalog title wow animate__animated animate__fadeInUp" data-wow-offset="10"">Каталог товаров</h2>
         <ul class="catalog__list">
 
-          <li class="catalog__card card">
+          <li class="catalog__card card wow animate__animated animate__fadeInUp" data-wow-delay=".2s" data-wow-offset="10"">
             <div class="card__image">
               <img class="card__img" src="images/catalog/1.jpg" alt="Американо">
             </div>
@@ -289,7 +289,7 @@
             </div>
           </li>
 
-          <li class="catalog__card card">
+          <li class="catalog__card card wow animate__animated animate__fadeInUp" data-wow-delay=".3s" data-wow-offset="10"">
             <div class="card__image">
               <img class="card__img" src="images/catalog/2.jpg" alt="Американо">
             </div>
@@ -309,7 +309,7 @@
             </div>
           </li>
 
-          <li class="catalog__card card">
+          <li class="catalog__card card wow animate__animated animate__fadeInUp" data-wow-delay=".6s" data-wow-offset="10"">
             <div class="card__image">
               <img class="card__img" src="images/catalog/3.jpg" alt="Американо">
             </div>

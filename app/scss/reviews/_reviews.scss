@@ -42,10 +42,10 @@
     }
 
     @include maxw($lg) {
-      left: 20px;
+      top: -30px;
     }
   }
- 
+  
   &::after {
     content: '';
     position: absolute;
@@ -75,9 +75,10 @@
       display: flex !important;
       flex-direction: column-reverse;
       align-items: center;
-      padding: 40px 20px;
+      padding: 50px 20px 20px 20px;
       align-items: start;
       max-width: 100%;
+      justify-content: center;
     }
   }
 
@@ -90,6 +91,7 @@
       font-size: 24px;
       margin-right: 0;
       height: 190px;
+      max-width: 100%;
     }
 
     @include maxw($xs) {
@@ -118,8 +120,8 @@
       width: 90px;
       height: 90px;
       display: flex;
+      align-items: center;
       padding-top: 25px;
-      align-self: center;
     }
 
     img {
@@ -142,7 +144,7 @@
   }
 
   .reviews-slider__text::-webkit-scrollbar {
-     display: none;
+    display: none;
   }
 
   .reviews-slider__text:hover::-webkit-scrollbar {
@@ -211,8 +213,6 @@
 .slick-active button{
   background-color: $title;
 }
-
-
 
 .rate {
  margin: 0 0 15px 0;

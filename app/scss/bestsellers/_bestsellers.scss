@@ -163,9 +163,10 @@
   }
 
   &__wrapper {
-    max-width: 1440px;
+    // max-width: 1440px;
     justify-content: flex-end;
     display: flex;
+    min-width: 0;
   }
 }
 
@@ -175,6 +176,7 @@
   max-width: 1060px;
   padding: 0 0 35px 0;
   margin-top: -100px;
+  min-width: 0;
 
   @include maxw($xxl-extra) {
     margin-top: 0;
