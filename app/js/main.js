@@ -1,16 +1,24 @@
 $(function(){
 
+  // $("a[href^='#']").click(function(){
+  //   let target = $(this).attr("href");
+  //   $("html, body").animate({
+  //     scrollTop: $(target).offset().top-0
+  //     }, 1000);
+  // });
+
+  
+
   $("a[href^='#']").click(function(){
-    let target = $(this).attr("href");
-    $("html, body").animate({
-      scrollTop: $(target).offset().top-0
-      }, 1000);
+    var _href = $(this).attr("href");
+    $("html").animate({scrollTop: $(_href).offset().top+"px"}, 2000);
+    return false;
   });
 
   $('.menu__btn, menu').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
-    $('body').toggleClass('lock');
+    // $('body').toggleClass('lock');
   });
 
   $('.reviews-slider').slick({
