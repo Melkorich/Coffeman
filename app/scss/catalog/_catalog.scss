@@ -38,6 +38,11 @@
     margin: 30px 20px;
   }
 
+  @include maxw($lg) {
+    height: 500px;
+  }
+
+
   @include maxw($xs) {
    width: 280px;
    padding: 30px 10px;
@@ -47,9 +52,9 @@
     box-shadow: 0 5px 40px rgba(#E5E5E5, 0.2);
     height: 500px;
 
-    @include maxw($xs) {
-      height: 480px;
-    }
+    // @include maxw($xs) {
+    //   height: 480px;
+    // }
   }
 
   &__image {
@@ -61,6 +66,10 @@
     z-index: 2;
     box-shadow: 0 3px 10px rgba(228, 228, 228, 0.2);
 
+    @include maxw($lg) {
+      left: 8px;
+    }
+
     @include maxw($xs) {
       width: 260px;
       height: 276px;
@@ -69,7 +78,8 @@
   }
 
   &__img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
     object-fit: cover;
   }
@@ -82,8 +92,15 @@
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease-in-out;
-  }
 
+    @include maxw($lg) {
+      margin: -40px 0 0 0;
+      padding: 0 25px 15px 25px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+ 
   &:hover .card__content {
     visibility: visible;
     opacity: 1;

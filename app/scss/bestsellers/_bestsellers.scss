@@ -224,7 +224,16 @@
 
     @include maxw($md) {
       margin: 0;
-     }
+
+      &::before {
+        display: none;
+        &:hover {
+          display: none;
+        }
+      }
+
+
+    }
 
     &::before {
       content: '';
@@ -235,7 +244,7 @@
       left: 0;
       background-color:rgba(35, 35, 35, 0.8);
       display: none;
-      transition: 0.5s;
+      transition: all .3s;
     }
 
     &:hover {
@@ -245,6 +254,10 @@
 
       &::before {
         display: block;
+
+        @include maxw($md) {
+          display: none;
+        }
       }
     }
   }
@@ -271,6 +284,7 @@
 
 .slider .slick-center .slider__link {
   transform: scale(1.15);
+  transition: all .5s;
 
   @include maxw($xl) {
     transform: none;

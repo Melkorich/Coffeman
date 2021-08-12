@@ -1,6 +1,11 @@
 .social {
   padding: 0 0 85px 0;
 
+  @include maxw($sm) {
+    padding: 0 0 40px 0;
+  }
+
+
   &__title {
     margin: 0 0 55px 0;
   }
@@ -19,10 +24,6 @@
 
     @include maxw($sm) {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include maxw($xs) {
-      grid-template-columns: repeat(1, 1fr);
     }
   }
  
