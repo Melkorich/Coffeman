@@ -11,7 +11,7 @@ $(document).ready(function() {
     $("html").animate({scrollTop: $(_href).offset().top+"px"}, 1500);
     return false;
   });
-  
+   
   $('.menu__btn, menu').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
