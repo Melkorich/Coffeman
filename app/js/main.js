@@ -20,7 +20,9 @@ $(document).ready(function() {
 
   $('.menu__link').on('click', function() {
     $('.menu__list').removeClass('menu__list--active');
+    $('body').removeClass('body--active');
   });
+
   
   $('.reviews-slider').slick({
     arrows: false,
