@@ -9,7 +9,7 @@
   @include maxw($md) {
     overflow: hidden;
   }
-
+ 
   &__body {
     display: flex;
     min-height: 100vh;
@@ -69,13 +69,16 @@
 
     @include maxw($md) {
       justify-content: space-between;
+    }
 
+    @include maxw($xs) {
+      margin:0 0 60px 0;
     }
   }
 
   .menu {
     .menu__list {
-    display: flex;
+      display: flex;
 
       @include maxw($md) {
         position: absolute;
@@ -154,6 +157,7 @@
     }
     
     span {
+      display: block;
       text-transform: lowercase;
       @include line-climp(2);
 

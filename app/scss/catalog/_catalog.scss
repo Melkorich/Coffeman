@@ -1,5 +1,6 @@
 .catalog {
   padding: 90px 0;
+  position: relative;
 
   @include maxw($xl) {
     padding: 50px 0;
@@ -51,10 +52,6 @@
   &:hover {
     box-shadow: 0 5px 40px rgba(#E5E5E5, 0.2);
     height: 500px;
-
-    // @include maxw($xs) {
-    //   height: 480px;
-    // }
   }
 
   &__image {

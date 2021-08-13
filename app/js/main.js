@@ -1,14 +1,24 @@
 $(document).ready(function() {
 
+  // $('body').on('click', function(event){
+  //   if (!$(event.target).closest('.menu').length) {
+  //     $('.menu__list').removeClass('menu__list--active')
+  //   }
+  // });
+
   $("a[href^='#']").click(function(){
     var _href = $(this).attr("href");
-    $("html").animate({scrollTop: $(_href).offset().top+"px"}, 2000);
+    $("html").animate({scrollTop: $(_href).offset().top+"px"}, 1500);
     return false;
   });
   
   $('.menu__btn, menu').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
+  });
+
+  $('.menu__link').on('click', function() {
+    $('.menu__list').removeClass('menu__list--active');
   });
   
   $('.reviews-slider').slick({
@@ -23,7 +33,7 @@ $(document).ready(function() {
 
     slidesToShow: 3,
     centerMode: true,
-    centerPadding: 'px',
+    centerPadding: '0px',
     focusOnSelect: true,
 
     responsive: [
@@ -41,7 +51,8 @@ $(document).ready(function() {
           slidesToShow: 1,
           arrows: false,
           dots: true,
-          swipe: true,
+          infinite: true,
+          // swipe: true,
         }
       },
     ]
