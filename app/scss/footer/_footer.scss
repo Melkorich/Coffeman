@@ -1,4 +1,5 @@
 .footer {
+  background-color: #1C1C1C;
 
   &__body {
     padding: 35px 0;
@@ -81,14 +82,23 @@
     font-size: 16px;
     display: inline-block;
   }
-
+  
   .footer__link-underline {
-    padding-bottom: 1px;
-    border-bottom: 1px solid $text;
-    transition: 0.3s;
+    position: relative;
 
-    &:hover {
-      border-bottom: 1px solid $hover;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 185px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $text;
+      transition: background-color 0.3s;
+    }
+
+    &:hover::before {
+      background-color: $hover;
     }
   }
 

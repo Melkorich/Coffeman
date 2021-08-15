@@ -243,7 +243,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color:rgba(35, 35, 35, 0.8);
+      background-color:rgba(35, 35, 35, 0.5);
       display: none;
       transition: all .3s;
     }
@@ -262,7 +262,7 @@
       }
     }
   }
-
+ 
   &__text {
     position: absolute;
     top: 50%;
@@ -274,6 +274,10 @@
 
     @include maxw($xl) {
       display: block;
+    }
+
+    @include maxw($sm) {
+      font-size: 30px;
     }
   }
 
@@ -301,6 +305,10 @@
 .slider .slick-center .slider__text{
   display: block;
 }
+
+.slider .slick-center .slider__link::before {
+  display: block;
+}
  
 .slick-arrow {
   position: absolute;
@@ -321,7 +329,7 @@
     fill: $text;
   }
 }
-
+ 
 .slick-left {
   left: 42%;
 

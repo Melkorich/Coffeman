@@ -156,6 +156,10 @@
       font-size: 60px;
       align-self:center;
     }
+
+    @include maxw($xs) {
+      font-size: 50px;
+    }
     
     span {
       display: block;
@@ -201,7 +205,10 @@
 
     @include maxw($sm) {
       line-height: 1.4;
-      text-align: right;
+    }
+
+    @include maxw($xs) {
+      font-size: 20px;
     }
   } 
 

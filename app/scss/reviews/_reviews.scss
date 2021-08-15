@@ -8,10 +8,11 @@
     position: absolute;
     width: 360px;
     height: 545px;
-    bottom: -250px;
-    left: 0;
+    bottom: -315px;
+    left: -20px;
     background-image: url('../images/catalog/bg.png');
     background-repeat: no-repeat;
+    background-size: cover;
 
     @include maxw($xxl) {
       opacity: 0.3;
@@ -191,8 +192,8 @@
   display: flex;
   position: absolute;
   bottom: -15px;
-  left: 40%;
-  transform: translateX(-45%);
+  left: 50%;
+  transform: translateX(-50%);
 
   @include maxw($xl) {
     bottom: -30px;
