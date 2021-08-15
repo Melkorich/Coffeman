@@ -305,31 +305,31 @@
 .slick-arrow {
   position: absolute;
   bottom: 0;
-  left: 52%;
+  left: 54%;
   background-color: transparent;
   border: transparent;
-  width: 68px;
-  height: 22px;
+  width: 56px;
+  height: 20px;
+  cursor: pointer;
 
   @include maxw($xl) {
     left: 55%;
   }
 
-  &:hover {
-    opacity: 0.5;
+  &:hover path {
+    transition: fill .3s;
+    fill: $text;
   }
 }
 
-.slick-prev {
+.slick-left {
   left: 42%;
 
   @include maxw($xl) {
     left: 38%;
   }
 
-  @include maxw($md) {
-    left: 10%;
-  }
+  
 }
 
 

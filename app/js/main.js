@@ -31,9 +31,9 @@ $(document).ready(function() {
       
   $('.bestsellers-slider').slick({
 
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/bestsellers/arrow-left.svg" alt="prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/bestsellers/arrow-right.svg" alt="next"></button>',
-
+    prevArrow: '<svg class="slick-left" width="57" height="8" viewBox="0 0 57 8" fill="#ad916a" xmlns="http://www.w3.org/2000/svg"><path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM57 3.5L1 3.5V4.5L57 4.5V3.5Z" fill="#ad916a"/></svg>',
+    nextArrow: '<svg class="slick-right" width="57" height="8" viewBox="0 0 57 8" fill="#ad916a" xmlns="http://www.w3.org/2000/svg"><path d="M56.3536 4.35355C56.5488 4.15829 56.5488 3.84171 56.3536 3.64645L53.1716 0.464466C52.9763 0.269204 52.6597 0.269204 52.4645 0.464466C52.2692 0.659728 52.2692 0.976311 52.4645 1.17157L55.2929 4L52.4645 6.82843C52.2692 7.02369 52.2692 7.34027 52.4645 7.53553C52.6597 7.7308 52.9763 7.7308 53.1716 7.53553L56.3536 4.35355ZM0 4.5H56V3.5H0V4.5Z" fill="#ad916a"/></svg>',
+ 
     slidesToShow: 3,
     centerMode: true,
     centerPadding: '0px',
@@ -75,6 +75,16 @@ $(document).ready(function() {
   //     mobile: false
   //   }
   // );
+
+  // wow = new WOW(
+  //   {
+  //     boxClass:     'wow',      // default
+  //     animateClass: 'animated', // default
+  //     offset:       0,          // default
+  //     mobile:       true,       // default
+  //     live:         true        // default
+  //   }
+  // )
 
   new WOW().init();
 
