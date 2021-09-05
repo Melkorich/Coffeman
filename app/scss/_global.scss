@@ -49,13 +49,3 @@ body {
     font-size: 35px;
   }
 } 
-
-@media (max-width: 768px) {
-  .wow,
-  .animate__animated,
-  .animate__fadeIn
-  .animate__fadeInUp {
-    animation: none;
-    visibility: hidden;
-   }
- }
