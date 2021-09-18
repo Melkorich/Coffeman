@@ -143,9 +143,9 @@
     max-width: 500px;
     margin-top: auto;
 
-    @include maxw($xs) {
-      margin-top: 20px;
-    }
+    // @include maxw($xs) {
+    //   margin-top: 20px;
+    // }
   }
 
   &__title {
@@ -169,7 +169,7 @@
     @include maxw($xs) {
       font-size: 50px;
       align-self: start;
-      margin: 0 0 15px 0;
+      margin: 0 0 20px 0;
     }
     
     span {
@@ -215,7 +215,7 @@
     font-size: 25px;
     line-height: 1.2;
     font-weight: 400;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     @include line-climp(4);
 
     @include maxw($sm) {
@@ -224,7 +224,7 @@
 
     @include maxw($xs) {
       font-size: 20px;
-      margin-bottom: 10px;
+      // margin-bottom: 30px;
     }
   } 
 
@@ -232,6 +232,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: auto;
+    margin-top: auto;
   }
 
   &__link {
@@ -258,7 +259,7 @@
       }
     }
   }
-}
+} 
  
 .menu__btn {
   display: none;

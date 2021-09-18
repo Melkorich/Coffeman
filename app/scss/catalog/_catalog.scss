@@ -121,9 +121,9 @@
   &__text {
     font-size: 20px;
     margin-bottom: 20px;
-    @include line-climp(4);
+    @include line-climp(3);
   }
- 
+  
   &__price {
     display: inline-block;
     font-size: 19px;

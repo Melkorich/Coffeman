@@ -37,14 +37,16 @@ $(document).ready(function() {
  
     slidesToShow: 3,
     centerMode: true,
-    centerPadding: '0px',
+    centerPadding: '0',
     focusOnSelect: true,
+    infinite: true,
 
     responsive: [
       {
         breakpoint: 1200,
         settings: {
           centerMode: false,
+          centerPadding: false,
           slidesToShow: 2,
         }
       },
@@ -55,7 +57,6 @@ $(document).ready(function() {
           slidesToShow: 1,
           arrows: false,
           dots: true,
-          infinite: true,
           // swipe: true,
         }
       },
@@ -88,6 +89,7 @@ $(document).ready(function() {
     }
   );
   wow.init();
+
 
 
 });
