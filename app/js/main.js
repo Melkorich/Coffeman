@@ -1,10 +1,4 @@
-$(document).ready(function() {
-
-  // $('body').on('click', function(event){
-  //   if (!$(event.target).closest('.menu').length) {
-  //     $('.menu__list').removeClass('menu__list--active')
-  //   }
-  // });
+$(function() {
 
   $("a[href^='#']").click(function(){
     var _href = $(this).attr("href");
@@ -72,25 +66,10 @@ $(document).ready(function() {
     'starSvg': '<svg xmlns="http://www.w3.org/2000/svg"><path d="M14.2821 0L17.5864 10.1699L28.2797 10.1699L19.6287 16.4552L22.933 26.625L14.2821 20.3397L5.63106 26.625L8.93544 16.4552L0.28445 10.1699L10.9777 10.1699L14.2821 0Z"></svg>',
   });
 
-
-  // new WOW().init();
-
-  var wow = new WOW(
-    {
-      boxClass:     'wow',      
-      animateClass: 'animated', 
-      offset:       0,    
-      mobile:       false, 
-      live:         true, 
-      callback:     function(box) {
-      },
-      scrollContainer: null, 
-      resetAnimation: true, 
-    }
-  );
-  wow.init();
-
-
-
 });
+
+wow = new WOW({ mobile: false })
+wow.init();
+
+
 

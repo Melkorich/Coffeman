@@ -8,7 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
+
+// @include flexc();
+// @include flexb();
   
 @mixin line-climp($row) {
   -webkit-line-clamp: $row; 

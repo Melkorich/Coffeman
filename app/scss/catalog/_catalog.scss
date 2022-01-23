@@ -43,7 +43,6 @@
     height: 500px;
   }
 
-
   @include maxw($xs) {
    width: 280px;
    padding: 30px 10px;

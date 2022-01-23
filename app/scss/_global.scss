@@ -13,6 +13,10 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -49,3 +53,19 @@ body {
     font-size: 35px;
   }
 }   
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgba(#232323, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6A5941;
+  border-radius: 10px;
+  border: 1px solid #ad916a;
+}
